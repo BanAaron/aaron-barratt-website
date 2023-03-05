@@ -1,3 +1,4 @@
+/* we can access these like global variables */
 :root {
   --light-navy: #09182E;
   --dark-slate: #495670;
@@ -9,26 +10,7 @@
   --font-mono: "Fira Code", "SF Mono", "Fira Mono", "Roboto Mono", monospace;
 }
 
-@keyframes fade {
-  0% {
-    color: var(--lightest-slate);
-  }
-  100% {
-    color: var(--green);
-  }
-}
-
-@keyframes underscore_fade {
-  0% {
-    text-decoration-color: transparent;
-  }
-  100% {
-    text-decoration-color: var(--green);
-  }
-}
-
 /* font stuff here */
-
 @font-face {
   font-family: "Fira Code";
   src: url("woff2/FiraCode-Light.woff2") format("woff2"),
@@ -174,8 +156,8 @@ body {
 }
 
 #nav_bar a:hover {
-  animation-name: fade;
-  animation-duration: 300ms;
+  color: var(--green);
+  transition: color 0.6s;
 }
 
 #nav_bar a b {
@@ -257,8 +239,7 @@ body {
 
 #about_me a:hover {
   text-decoration: underline;
-  animation-name: underscore_fade;
-  animation-duration: 300ms;
+  transition: text-decoration 600ms;
 }
 
 #about_me ul {
