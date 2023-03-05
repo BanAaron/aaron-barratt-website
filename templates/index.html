@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Barratt Dev</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div id="header_image_container">
-            <img id="pfp" src="/static/pfp.png" alt="profile picture">
-        </div>
-        <div id="nav_bar">
-            <ul>
-                <li><a href="">01. About</a></li>
-                <li><a href="">02. Projects</a></li>
-                <li><a href="">03. Projects</a></li>
-                <li><a href="">04. Résumé</a></li>
-
-            </ul>
-        </div>
+      <div id="pfp_container">
+        <img id="pfp" src="/static/pfp.png">
+      </div>
+      <div id="nav_bar">
+        <ul>
+          <li>
+            <a href="{{url_for('views.about_page')}}"><b>01.</b> About</a>
+          </li>
+          <li>
+            <a href="{{url_for('views.projects_page')}}"><b>02.</b> Projects</a>
+          </li>
+          <li>
+            <a href="{{url_for('views.work_page')}}"><b>03.</b> Work</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1qBaQpx2I3yXKs0EscmvyyFsnD1b0qHBr/view?usp=share_link" target="_blank"><b>04.</b> Résumé</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
+  <div id="main">
+    <div id="content">
+      {% block content %}
+      <h3 id="tag_line">Hi, my name is</h3>
+      <h1>{{name}}</h1>
+      <h2>{{tag_line}}</h2>
+      {% endblock %}
+    </div>
+  </div>
+  </body>
 </html>
