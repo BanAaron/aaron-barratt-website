@@ -1,4 +1,4 @@
-# aaonbarratt.dev
+# aaronbarratt.dev
 My personal website
 
 big inspo: https://brittanychiang.com/
