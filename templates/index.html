@@ -9,7 +9,7 @@
   <body>
     <div id="header">
       <div id="pfp_container">
-        <img id="pfp" src="/static/pfp.png">
+        <img id="pfp" src="/static/pfp.jpg">
       </div>
       <div id="nav_bar">
         <ul>
@@ -31,11 +31,15 @@
   <div id="main">
     <div id="content">
       {% block content %}
-      <h3 id="tag_line">Hi, my name is</h3>
-      <h1>{{name}}</h1>
-      <h2>{{tag_line}}</h2>
       {% endblock %}
     </div>
   </div>
+  <div id="socials">
+    <ul>
+      <a href="https://github.com/aarontbarratt" target=_blank><li><img src="/static/github.png"></li></a>
+      <a href="https://www.linkedin.com/in/aaron-barratt/" target=_blank><li><img src="/static/linkedin.png"></li></a>
+      <a href="https://www.instagram.com/aarontbarratt/" target="_blank"><li><img src="/static/instagram.png"></li></a>
+    </ul>
+  </div>
   </body>
-</html>
+</ftml>

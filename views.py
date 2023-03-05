@@ -6,7 +6,7 @@ views = Blueprint(__name__, "views")
 @views.route("/about")
 def about_page():
     return render_template(
-        "index.html", name="Aaron Barratt.", tag_line="I build things in computers."
+        "about.html", name="Aaron Barratt.", tag_line="Passionate SQL & Python Developer."
     )
 
 
