@@ -98,14 +98,12 @@ body {
   margin: 0;
   margin-top: 10px;
   padding: 0;
-  background-color: var(--light-navy);
   height: 100px;
   width: 100%;
 }
 
 #pfp_container {
   float: left;
-  background-color: var(--light-navy);
   height: 100%;
   width: 25%;
 }
@@ -124,7 +122,6 @@ body {
 
 #nav_bar {
   float: left;
-  background-color: var(--light-navy);
   height: 100%;
   width: 75%;
   display: flex;
@@ -134,7 +131,6 @@ body {
 
 #nav_bar ul {
   list-style-type: none;
-  background-color: var(--light-navy);
   margin: 0;
   padding: 10px;
   padding-right: 50px;
@@ -167,7 +163,6 @@ body {
 /* main body content */
 
 #main {
-  background-color: var(--light-navy);
   padding: 0;
   margin: 0;
   float: left;
@@ -222,6 +217,11 @@ body {
 #about_me h2 {
   color: var(--slate);
   font-size: 45px;
+}
+
+#pointy {
+  color: var(--green);
+  font-family: var(--font-mono);
 }
 
 #about_me #tag_line {
