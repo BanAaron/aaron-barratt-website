@@ -7,97 +7,75 @@
   --slate: #8992B1;
   --lightest-slate: #ccd6f6;
   --green: #64ffda;
-  --font-sans: "Inter", "Calibre", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
+  --font-sans: "Inter", "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "Fira Code", "SF Mono", "Fira Mono", "Roboto Mono", monospace;
   --transition_time: 600ms;
 }
-
 /* font stuff here */
 @font-face {
   font-family: "Fira Code";
-  src: url("woff2/FiraCode-Light.woff2") format("woff2"),
-    url("woff/FiraCode-Light.woff") format("woff");
+  src: url("woff2/FiraCode-Light.woff2") format("woff2"), url("woff/FiraCode-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Fira Code";
-  src: url("woff2/FiraCode-Regular.woff2") format("woff2"),
-    url("woff/FiraCode-Regular.woff") format("woff");
+  src: url("woff2/FiraCode-Regular.woff2") format("woff2"), url("woff/FiraCode-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Fira Code";
-  src: url("woff2/FiraCode-Medium.woff2") format("woff2"),
-    url("woff/FiraCode-Medium.woff") format("woff");
+  src: url("woff2/FiraCode-Medium.woff2") format("woff2"), url("woff/FiraCode-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Fira Code";
-  src: url("woff2/FiraCode-SemiBold.woff2") format("woff2"),
-    url("woff/FiraCode-SemiBold.woff") format("woff");
+  src: url("woff2/FiraCode-SemiBold.woff2") format("woff2"), url("woff/FiraCode-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Fira Code";
-  src: url("woff2/FiraCode-Bold.woff2") format("woff2"),
-    url("woff/FiraCode-Bold.woff") format("woff");
+  src: url("woff2/FiraCode-Bold.woff2") format("woff2"), url("woff/FiraCode-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Fira Code VF";
-  src: url("woff2/FiraCode-VF.woff2") format("woff2-variations"),
-    url("woff/FiraCode-VF.woff") format("woff-variations");
-  /* font-weight requires a range: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#Using_a_variable_font_font-face_changes */
+  src: url("woff2/FiraCode-VF.woff2") format("woff2-variations"), url("woff/FiraCode-VF.woff") format("woff-variations");
+ /* font-weight requires a range: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#Using_a_variable_font_font-face_changes */
   font-weight: 300 700;
   font-style: normal;
 }
-
 /* generic font styles */
-
 h1, h2 {
   font-family: var(--font-sans);
   color: var(--lightest-slate);
   font-weight: 700;
   margin: 0;
 }
-
 h2 {
   color: var(--slate);
 }
-
 p {
   font-family: var(--font-sans);
   font-size: 22px;
   color: var(--lightest-slate);
 }
-
 #tag_line {
   font-family: var(--font-mono);
   font-weight: 300;
   color: var(--green);
   margin: 0;
 }
-
 body {
   margin: 0;
   padding: 0;
   background-color: var(--navy);
-  /* overflow: auto; */
 }
-
 /* header contents */
-
 #header {
   margin: 0;
   margin-top: 10px;
@@ -105,13 +83,11 @@ body {
   height: 100px;
   width: 100%;
 }
-
 #pfp_container {
   float: left;
   height: 100%;
   width: 25%;
 }
-
 #pfp {
   height: 96px;
   width: 96px;
@@ -121,9 +97,7 @@ body {
   border-width: 2px;
   border-style: solid;
 }
-
 /* nav bar */
-
 #nav_bar {
   float: left;
   height: 100%;
@@ -132,40 +106,32 @@ body {
   align-items: center;
   justify-content: right;
 }
-
 #nav_bar ul {
   list-style-type: none;
   margin: 0;
   padding: 10px;
   padding-right: 50px;
 }
-
 #nav_bar li {
   float: left;
 }
-
 #nav_bar li a {
   text-decoration: none;
   padding: 10px;
 }
-
 #nav_bar a {
   font-family: var(--font-mono);
   font-weight: 300;
   color: var(--lightest-slate);
 }
-
 #nav_bar a:hover {
   color: var(--green);
   transition: color var(--transition_time);
 }
-
 #nav_bar a b {
   color: var(--green);
 }
-
 /* main body content */
-
 #main {
   padding: 0;
   margin: 0;
@@ -173,13 +139,11 @@ body {
   width: 100%;
   height: 100%;
 }
-
 #content {
   margin-top: 8%;
   padding-left: 20%;
   padding-right: 10%;
 }
-
 #socials {
   position: fixed;
   bottom: 0;
@@ -188,25 +152,20 @@ body {
   align-items: center;
   justify-content: right;
 }
-
 #socials ul {
   padding: 0;
   margin: 0;
 }
-
 #socials li {
   list-style-type: none;
   list-style-position: inside;
   padding-top: 25px;
 }
-
 #socials li img {
   width: 62px;
   height: 62px;
 }
-
 /* footer */
-
 #footer {
   height: 50px;
   margin: 0;
@@ -215,48 +174,39 @@ body {
   width: 100%;
   float: left;
 }
-
 /* about me page */
-
 #about_me h1, h2 {
   font-family: var(--font-sans);
   color: var(--lightest-slate);
   font-weight: 700;
   margin: 0;
 }
-
 #about_me h1 {
   font-size: 70px;
 }
-
 #about_me h2 {
   color: var(--slate);
   font-size: 45px;
 }
-
 #pointy {
   color: var(--green);
   font-family: var(--font-mono);
 }
-
 #about_me #tag_line {
   font-family: var(--font-mono);
   font-weight: 300;
   color: var(--green);
   margin: 0;
 }
-
 #about_me a {
   color: var(--green);
   text-decoration: underline;
   text-decoration-color: transparent;
 }
-
 #about_me a:hover {
   text-decoration: underline;
   transition: text-decoration var(--transition_time);
 }
-
 #about_me ul {
   float: left;
   padding: 0;
@@ -264,20 +214,16 @@ body {
   padding-left: 50px;
   list-style-type: circle;
 }
-
 #about_me ul li {
   font-family: var(--font-sans);
   font-size: 22px;
   color: var(--green);
 }
-
 #about_me ul li p {
   padding: 0;
   margin: 0;
 }
-
 /* projects page */
-
 .projects_grid {
   list-style: none;
   padding: 0;
@@ -286,7 +232,6 @@ body {
   grid-template-columns: auto auto;
   gap: 15px;
 }
-
 .project_inner {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   display: flex;
@@ -301,7 +246,6 @@ body {
   background-color: var(--light-navy);
   overflow: auto;
 }
-
 .project_github {
   width: 32px;
   height: 32px;
@@ -310,41 +254,86 @@ body {
   right:25px;
   float: right;
 }
-
 .project_text {
   font-size: 18px;
   margin: 0;
-  color: var(--slate)
+  color: var(--slate) 
 }
-
 .project a {
   color: var(--green);
   text-decoration: underline;
   text-decoration-color: transparent;
 }
-
 .project a:hover {
   text-decoration: underline;
   transition: text-decoration var(--transition_time);
 }
-
 .technologies ul {
-    float: left;
-    padding: 0;
-    margin: 0;
-    list-style-type: circle;
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: circle;
 }
-
 .technologies li {
   padding: 0;
   margin: 0;
   display: inline;
 }
-
 .technologies {
   font-family: var(--font-mono);
   color: var(--green);
   font-size: 12px;
   padding: 0;
   padding-top: 20px;
+  font-weight: 300;
+}
+/* work history page */
+.job_container {
+  padding: 25px;
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  background-color: var(--light-navy);
+  border-radius: 5px;
+  max-width: 750px;
+  margin: 25px 0 25px 0;
+}
+.job_container a {
+  color: var(--green);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+.job_container a:hover {
+  text-decoration: underline;
+  transition: text-decoration var(--transition_time);
+}
+.company {
+  font-family: var(--font-sans);
+  color: var(--lightest-slate);
+  font-size: 50px;
+}
+.job_title {
+  color: var(--slate);
+  font-size: 40px;
+  margin-top: -10px;
+}
+.job_title_2 {
+  margin-top: 15px;
+}
+.date_range {
+  color: var(--green);
+  font-family: var(--font-mono);
+  margin: 10px 0 10px 0;
+  font-weight: 300;
+}
+.ul_bullet_points {
+  color: var(--lightest-slate);
+  font-family: var(--font-sans);
+  margin: 0;
+  list-style-type: circle;
+  color: var(--green);
+  font-size: 22px;
+}
+.ul_bullet_points p {
+  font-size: 18px;
+  margin: 0;
+  font-family: var(--font-sans);
 }
