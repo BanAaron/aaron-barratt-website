@@ -9,7 +9,7 @@
   <body>
     <div id="header">
       <div id="pfp_container">
-        <img id="pfp" src="/static/pfp.jpg">
+        <a href="{{ url_for('views.about_page')}}"><img id="pfp" src="/static/pfp.jpg"></a>
       </div>
       <div id="nav_bar">
         <ul>
@@ -33,5 +33,6 @@
       <a href="https://www.instagram.com/aarontbarratt/" target="_blank"><li><img src="/static/instagram.png"></li></a>
     </ul>
   </div>
+  <div id="footer"></div>
   </body>
 </html>

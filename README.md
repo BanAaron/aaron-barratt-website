@@ -1,6 +1,6 @@
 # www.aaronbarratt.dev
-My simple site to show off my projects on github, a bit of web dev learning and host my résumé.
+My simple site to show off my projects on GitHub, a bit of web dev learning and host my résumé.
 
-![website](https://i.imgur.com/qwEJ9ib.png)
+![website](https://i.imgur.com/yLYj3iA.png)
 
 Made with Python (Flask), HTML and CSS.

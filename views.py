@@ -3,10 +3,17 @@ from flask import Blueprint, render_template, redirect, url_for
 views = Blueprint(__name__, "views")
 
 
+@views.route("/")
+def go_home():
+    return redirect(url_for("views.about_page"))
+
+
 @views.route("/about")
 def about_page():
     return render_template(
-        "about.html", name="Aaron Barratt.", tag_line="Passionate SQL & Python Developer."
+        "about.html",
+        name="Aaron Barratt.",
+        tag_line="Passionate SQL & Python Developer.",
     )
 
 
@@ -18,9 +25,3 @@ def projects_page():
 @views.route("/work")
 def work_page():
     return render_template("work.html")
-
-
-# this is how to redirect
-@views.route("/")
-def go_home():
-    return redirect(url_for("views.about_page"))

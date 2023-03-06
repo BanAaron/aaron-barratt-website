@@ -1,6 +1,8 @@
 /* we can access these like global variables */
 :root {
-  --light-navy: #09182E;
+  --light-navy: #112240;
+  --navy: #0a192f;
+  --navy-shadow: rgba(2,12,27,0.7);
   --dark-slate: #495670;
   --slate: #8992B1;
   --lightest-slate: #ccd6f6;
@@ -8,6 +10,7 @@
   --font-sans: "Inter", "Calibre", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-mono: "Fira Code", "SF Mono", "Fira Mono", "Roboto Mono", monospace;
+  --transition_time: 600ms;
 }
 
 /* font stuff here */
@@ -89,7 +92,8 @@ p {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--light-navy);
+  background-color: var(--navy);
+  /* overflow: auto; */
 }
 
 /* header contents */
@@ -153,7 +157,7 @@ body {
 
 #nav_bar a:hover {
   color: var(--green);
-  transition: color 0.6s;
+  transition: color var(--transition_time);
 }
 
 #nav_bar a b {
@@ -201,6 +205,17 @@ body {
   height: 62px;
 }
 
+/* footer */
+
+#footer {
+  height: 100px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  float: left;
+}
+
 /* about me page */
 
 #about_me h1, h2 {
@@ -239,7 +254,7 @@ body {
 
 #about_me a:hover {
   text-decoration: underline;
-  transition: text-decoration 600ms;
+  transition: text-decoration var(--transition_time);
 }
 
 #about_me ul {
@@ -261,3 +276,75 @@ body {
   margin: 0;
 }
 
+/* projects page */
+
+.projects_grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.project_inner {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 2rem 1.75rem;
+  border-radius: 5px;
+  background-color: var(--light-navy);
+  overflow: auto;
+}
+
+.project_github {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 35px;
+  right:25px;
+  float: right;
+}
+
+.project_text {
+  font-size: 18px;
+  margin: 0;
+  color: var(--slate)
+}
+
+.project a {
+  color: var(--green);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.project a:hover {
+  text-decoration: underline;
+  transition: text-decoration var(--transition_time);
+}
+
+.technologies ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: circle;
+}
+
+.technologies li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.technologies {
+  font-family: var(--font-mono);
+  color: var(--green);
+  font-size: 12px;
+  padding: 0;
+  padding-top: 20 px;
+}
