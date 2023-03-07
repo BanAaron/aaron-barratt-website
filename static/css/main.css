@@ -188,6 +188,9 @@ body {
   color: var(--slate);
   font-size: 45px;
 }
+#about_me p {
+  max-width: 1100px;
+}
 #pointy {
   color: var(--green);
   font-family: var(--font-mono);

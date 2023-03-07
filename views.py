@@ -12,8 +12,8 @@ def go_home():
 def about_page():
     return render_template(
         "about.html",
-        name="Aaron Barratt.",
-        tag_line="Passionate SQL & Python Developer.",
+        name="Aaron Barratt",
+        tag_line="Passionate SQL & Python Developer",
     )
 
 
