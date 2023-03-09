@@ -1,0 +1,66 @@
+/* projects page */
+.projects_grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+.project_inner {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 2rem 1.75rem;
+  border-radius: 5px;
+  background-color: var(--light-navy);
+  overflow: auto;
+}
+.project_github {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 35px;
+  right:25px;
+  float: right;
+}
+.project_text {
+  font-size: 18px;
+  margin: 0;
+  color: var(--slate) 
+}
+.project a {
+  color: var(--lightest-slate);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+.project a:hover {
+  text-decoration: underline;
+  transition: text-decoration var(--transition_time);
+  text-decoration-color: var(--green);
+
+}
+.technologies ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: circle;
+}
+.technologies li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.technologies {
+  font-family: var(--font-mono);
+  color: var(--green);
+  font-size: 12px;
+  padding: 0;
+  padding-top: 20px;
+  font-weight: 300;
+}

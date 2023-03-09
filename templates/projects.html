@@ -1,10 +1,14 @@
 {% extends "index.html" %}
+{% block head%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
 {% block content %}
 <ul class="projects_grid">
     <li id="website" class="project">
         <div class="project_inner">
             <a href="https://github.com/aarontbarratt/aaronbarrattwebsite" target="_blank"><img src="/static/github_mark.png" class="project_github"></a>
-            <a href="https://github.com/aarontbarratt/aaronbarrattwebsite" target="_blank"><h1>aaronbarratt.dev</h1></a>
+            <h1><a href="https://github.com/aarontbarratt/aaronbarrattwebsite" target="_blank">aaronbarratt.dev</a></h1>
             <p class="project_text">This website! Made with Python using Flask.</p>
             <ul class="technologies">
                 <li>Python</li>
@@ -17,7 +21,7 @@
     <li id="website" class="project">
         <div class="project_inner">
             <a href="https://github.com/aarontbarratt/pyResolutionChanger" target="_blank"><img src="/static/github_mark.png" class="project_github"></a>
-            <a href="https://github.com/aarontbarratt/pyResolutionChanger" target="_blank"><h1>pyResolutionChanger</h1></a>
+            <h1><a href="https://github.com/aarontbarratt/pyResolutionChanger" target="_blank">pyResolutionChanger</a></h1>
             <p class="project_text">System tray app to switch between resolutions.</p>
             <ul class="technologies">
                 <li>Python</li>
@@ -28,7 +32,7 @@
     <li id="website" class="project">
         <div class="project_inner">
             <a href="https://github.com/aarontbarratt/pyImageCropper" target="_blank"><img src="/static/github_mark.png" class="project_github"></a>
-            <a href="https://github.com/aarontbarratt/pyImageCropper" target="_blank"><h1>pyImageCropper</h1></a>
+            <h1><a href="https://github.com/aarontbarratt/pyImageCropper" target="_blank">pyImageCropper</a></h1>
             <p class="project_text">Simple GUI tool to bulk crop images.</p>
             <ul class="technologies">
                 <li>Python</li>
@@ -38,17 +42,3 @@
     </li>
 </ul>
 {% endblock %}
-
-<!-- <li id="website" class="project">
-    <div class="project_inner">
-        <a href="" target="_blank"><img src="/static/github_mark.png" class="project_github"></a>
-        <a href="" target="_blank"><h1></h1></a>
-        <p class="project_text"></p>
-        <ul class="technologies">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-</li> -->
