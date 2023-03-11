@@ -4,17 +4,15 @@ views = Blueprint(__name__, "views")
 
 
 @views.route("/")
-def go_home():
-    return redirect(url_for("views.about_page"))
+def home_page():
+    return render_template(
+        "home.html", name="Aaron Barratt", tag_line="SQL Server & Python Developer"
+    )
 
 
 @views.route("/about")
 def about_page():
-    return render_template(
-        "about.html",
-        name="Aaron Barratt.",
-        tag_line="Passionate SQL & Python Developer.",
-    )
+    return render_template("about.html")
 
 
 @views.route("/projects")
@@ -25,3 +23,8 @@ def projects_page():
 @views.route("/work")
 def work_page():
     return render_template("work.html")
+
+
+@views.route("/test")
+def test_page():
+    return render_template("test.html")
