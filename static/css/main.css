@@ -49,37 +49,30 @@
   font-weight: 300 700;
   font-style: normal;
 }
-
 body {
   background-color: var(--navy);
   margin: 25px 25px 0 25px;
 }
-
 * {
   box-sizing: border-box;
 }
-
 [class*="col-"] {
   float: left;
   padding: 15px;
 }
-
 html {
   font-family: var(--font-sans);
   color: var(--lightest-slate);
   font-weight: 300;
 }
-
 .monospace {
   font-family: var(--font-mono);
   color: var(--green)
 }
-
 /* profile picture */
 .profile-picture {
   padding: 10px;
 }
-
 .profile-picture img {
   width: 100%;
   border-radius: 50%;
@@ -87,7 +80,6 @@ html {
   border-style: solid;
   box-shadow: 2px 2px 10px 10px var(--navy-shadow);
 }
-
 /* socials bar / menu */
 .socials {
   display: flex;
@@ -95,43 +87,35 @@ html {
   justify-content: center;
   margin-top: 15px;
 }
-
 .socials img {
   width: 50px;
 }
-
 .socials ul {
   list-style-type: none;
   padding: 0;
 }
-
 .socials li {
   float: left;
   padding: 0 1rem 0 1rem;
 }
-
 /* navigation bar / menu */
 .menu ul {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
 }
-
 .menu ul li {
   padding: 5px 0 5px 0;
 }
-
 .menu-text {
   color: var(--lightest-slate);
   font-family: var(--font-mono);
   text-decoration: none;
   font-size: 20px;
 }
-
 .menu-item-number {
   color: var(--green)
 }
-
 /* desktop css */
 @media only screen and (min-width: 768px) {
   .col-1 {width: 8.33%;}
@@ -146,17 +130,14 @@ html {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-
   .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
   .profile-picture {
     order: 1;
   }
-  
   .menu {
     order: 2;
     display: flex;
@@ -174,8 +155,19 @@ html {
   .menu a {
     font-size: 16px;
   }
-  
+  .menu a:hover {
+    color: var(--green);
+    transition: color var(--transition_time);
+  }
   .socials {
-      order: 3;
+    order: 3;
+    position: absolute;
+    left: 5;
+    bottom: 0;
+    display: inline-block;
+  }
+  .socials li {
+    margin: 0;
+    padding: 0.5rem;
   }
 }
