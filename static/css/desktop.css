@@ -1,0 +1,147 @@
+/* desktop css */
+@media only screen and (min-width: 768px) {
+  .col-1 {
+     width: 8.33%;
+ }
+  .col-2 {
+     width: 16.66%;
+ }
+  .col-3 {
+     width: 25%;
+ }
+  .col-4 {
+     width: 33.33%;
+ }
+  .col-5 {
+     width: 41.66%;
+ }
+  .col-6 {
+     width: 50%;
+ }
+  .col-7 {
+     width: 58.33%;
+ }
+  .col-8 {
+     width: 66.66%;
+ }
+  .col-9 {
+     width: 75%;
+ }
+  .col-10 {
+     width: 83.33%;
+ }
+  .col-11 {
+     width: 91.66%;
+ }
+  .col-12 {
+     width: 100%;
+ }
+  h1 {
+      color: var(--lightest-slate);
+      font-size: 80px;
+ }
+  h2 {
+      color: var(--slate);
+      font-size: 50px;
+ }
+  h1, h2 {
+      margin: 0;
+ }
+  p {
+      font-size: 1.25em;
+      font-weight: 400;
+ }
+  hr {
+      width: 25%;
+      margin-left: 0;
+      margin-bottom: 25px;
+ }
+  .header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+ }
+  .profile-picture {
+      order: 1;
+      margin: auto;
+ }
+  .menu {
+      order: 3;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+ }
+  .menu ul {
+      margin: 0;
+ }
+  .menu li {
+      float: left;
+      margin-left: 1rem;
+ }
+  .menu a {
+      font-size: 16px;
+ }
+  .menu a:hover {
+      color: var(--green);
+      transition: color var(--transition_time);
+ }
+  .socials {
+      order: 2;
+      margin: 0;
+ }
+  .socials li {
+      margin: 0;
+      padding: 0.5rem;
+ }
+  .main-content {
+      padding-left: 15rem;
+      padding-top: 5rem;
+ }
+  .about {
+      max-width: 80%;
+ }
+  .hi-my-name-is {
+      font-size: 18px;
+ }
+ /* TODO: fix image placements on desktop */
+  .about-img {
+      border-width: 0.6em;
+      display: none;
+ }
+  .about-img-container {
+      padding-top: 2em;
+ }
+  .about-img:nth-of-type(2) {
+      rotate: -7deg;
+      margin-left: 25em;
+      margin-top: -28em;
+ }
+  .project-container {
+      max-width: 80%;
+ }
+  .project-title a {
+      text-decoration-color: transparent;
+      font-size: 40px;
+ }
+ /* work section */
+  .work-inner {
+      max-width: 80%;
+ }
+  .job-title {
+      font-size: 50px;
+      font-weight: 700;
+ }
+  .company-name a {
+      color: var(--slate);
+      font-size: 40px;
+      font-weight: 700;
+ }
+  .company-name a {
+      color: var(--slate);
+      text-decoration-color: transparent;
+ }
+  .company-name a:hover {
+      text-decoration-color: var(--green);
+      transition: text-decoration-color var(--transition_time);
+ }
+}
