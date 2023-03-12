@@ -8,7 +8,7 @@
   <body>
     <div class="row">
       <div class="header col-12">
-        <div class="profile-picture col-3">
+        <div class="profile-picture col-2">
           <img src="/static/pfp.jpg" alt="Aaron Barratt Portraite Image">
         </div>
         <div class="socials col-12">
@@ -24,15 +24,29 @@
             </a>
           </ul>
         </div>
-        <div class="menu col-9">
+        <div class="menu col-10">
           <ul>
-            <li><a class="menu-text" href=""><span class="menu-item-number">01.</span> About</a></li>
-            <li><a class="menu-text" href=""><span class="menu-item-number">02.</span> Projects</a></li>
-            <li><a class="menu-text" href=""><span class="menu-item-number">03.</span> Work</a></li>
-            <li><a class="menu-text" href="https://drive.google.com/file/d/1qBaQpx2I3yXKs0EscmvyyFsnD1b0qHBr/view?usp=share_link" target="_blank"><span class="menu-item-number">04.</span> Résumé</a></li>
+            <li><a class="menu-text" href="#about-me"><span class="green">01.</span> About</a></li>
+            <li><a class="menu-text" href="#projects"><span class="green">02.</span> Projects</a></li>
+            <li><a class="menu-text" href="#work"><span class="green">03.</span> Work</a></li>
+            <li><a class="menu-text" href="https://drive.google.com/file/d/1qBaQpx2I3yXKs0EscmvyyFsnD1b0qHBr/view?usp=share_link" target="_blank"><span class="green">04.</span> Résumé</a></li>
           </ul>
         </div>
       </div>
+      <div class="main-content col-12">
+        <div class="about div-12">
+          <span id="about-me" class="line-break">about me</span>
+          <hr>
+          <span class="hi-my-name-is green">Hi, my name is</span>
+          <h1>{{name}}</h1>
+          <h2><span class="green pointy">></span> {{tag_line}}</h2>
+          <p>I love working with data! My interest in computers started in 2006 playing Age of Empires 2 and EverQuest with my Dad on his "work computer". My passion for video games set me on the path to studying <a href="https://www.northampton.ac.uk/courses/games-programming-bsc-hons/" target=_blank>Computer Games Development</a> at the University of Northampton in 2014.</p>
+      
+          <p>Fast-forward to today, and I've had the privilege of working in Professional Services, Database Administration
+          and as a Technical Engineer. Currently, I am working as a <a href="https://www.userzoom.com/" target=_blank>
+          T3 Technical Engineer at UserZoom.</a></p>
+      </div>
+    </div>
     </div>
   </body>
 </html>
