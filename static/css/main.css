@@ -201,10 +201,9 @@ hr {
   }
   .profile-picture {
     order: 1;
-    /* display: none; */
   }
   .menu {
-    order: 2;
+    order: 3;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -217,18 +216,15 @@ hr {
     margin-left: 1rem;
   }
   .menu a {
-    font-size: 16px;
+    font-size: 20px;
   }
   .menu a:hover {
     color: var(--green);
     transition: color var(--transition_time);
   }
   .socials {
-    order: 3;
-    position: absolute;
-    left: 5;
-    bottom: 0;
-    display: inline-block;
+    order: 2;
+    margin: 0;
   }
   .socials li {
     margin: 0;
