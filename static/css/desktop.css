@@ -131,6 +131,9 @@
       font-size: 50px;
       font-weight: 700;
  }
+  .job-title {
+    margin-bottom: -1rem;
+  }
   .company-name a {
       color: var(--slate);
       font-size: 40px;
