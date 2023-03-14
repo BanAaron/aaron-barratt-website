@@ -149,4 +149,8 @@
         text-decoration-color: var(--green);
         transition: text-decoration-color var(--transition_time);
    }
+    .resume iframe {
+        box-shadow: 2px 2px 10px 10px var(--navy-shadow);
+        width: 80%;
+   }
 }
