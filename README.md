@@ -20,4 +20,3 @@ First make sure you have Python3 installed, including pip to install dependencie
 3. Install the requirements `pip install -r requirements.txt`.
 4. Run with python `python3 app.py`.
 5. Open http://127.0.0.1:8000 in your browser of choice.
-
