@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import Job from "./Job";
-import { useState } from "react";
-import SetTitle from "./SetTitle";
+import Header from "./Header";
+import DarkModeToggle from "./DarkModeToggle";
 
 const App = () => {
   const JOBS = [
@@ -28,6 +28,8 @@ const App = () => {
 
   return (
     <div>
+      <Header />
+      <DarkModeToggle />
       <h1>Aaron Barratt</h1>
       {JOBS.map((job) => (
         <Job
@@ -37,7 +39,6 @@ const App = () => {
           jobDescription={job.description}
         />
       ))}
-      <SetTitle />
     </div>
   );
 };
