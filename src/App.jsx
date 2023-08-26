@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import Job from "./Job";
 import Header from "./Header";
 import DarkModeToggle from "./DarkModeToggle";
+import { StrictMode } from "react";
 
 const App = () => {
   const JOBS = [
@@ -45,4 +46,8 @@ const App = () => {
 
 const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
